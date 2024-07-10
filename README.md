@@ -7,7 +7,7 @@
 ## Purpose
 
 - This page provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-app-2.0](https://bccdc.shinyapps.io/PHIDO/).
- 
+ <br><br>
 | |  CD weekly alerts | PHIDO-app 2.0 |
 | :-- | :--  | :-- |
 | **Description** |​ To detect an unusual rise in weekly disease counts based on their temporal and cyclical trends.​ | To enable interactive explorations of alerts (sort, etc.) |
@@ -19,13 +19,12 @@
 | ​**Average Time** | 30 minutes​  | 10 minutes |
 
 Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org/sites/BCCDCsurv/analysts/_layouts/15/start.aspx#/SitePages/CD%20Weekly%20Alerts%20Procedure.aspx).
-
+<br><br>
 <hr>
 
 ### How-to
 
-
-[Companion guide (howto instructions with screenshots)](https://tinyurl.com/phido-dashboard]
+- Companion guide: how-to instructions with screenshots](https://tinyurl.com/phido-dashboard]
 
 <details>
 <summary> A. Launching dashboard on your station locally</summary>
