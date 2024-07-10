@@ -33,7 +33,7 @@
 3. Choose "Open Project"
 4. Copy-paste below:
     ```
-    \\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\beta_version_main0418\
+    \\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\beta_version\
     ```
 5. Select ```dashboard.Rproj```
 6. Execute below and enter `y` when prompted about installations
