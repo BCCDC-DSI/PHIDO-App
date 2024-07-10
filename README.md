@@ -24,6 +24,9 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 
 ### How-to
 
+
+[Companion guide (howto instructions with screenshots)](https://tinyurl.com/phido-dashboard]
+
 <details>
 <summary> A. Launching dashboard on your station locally</summary>
 
@@ -64,8 +67,12 @@ See [example log showing successful R Studio outputs](example_log.md)
 <details>
 <summary> Adding users </summary>
 
-- Login under data_analytics@bccdc.ca
-- Password: [data analysts been given this info]
+1. Update the email list to ensure that retired staff will no longer have access to the app  
+2. Update the user list by visiting https://www.shinyapps.io/admin/#/application/12298682/users
+ - Email login: data_analytics@bccdc.ca
+ - Password: [data analysts been given this info]
+- Application visibiity: select ``private''
+ - Add email of individual users
 
 </details>
 
