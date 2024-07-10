@@ -9,8 +9,7 @@ include:
 title: Python/Git Workshop
 markdown: GFM
 show_downloads: true
-theme:  jekyll-theme-leap-day
-
+theme:  jekyll-theme-moon
 
 # jekyll-theme-minimal     <-- blue
 # jekyll-theme-hacker      <-- black background with typewriter font
@@ -18,5 +17,5 @@ theme:  jekyll-theme-leap-day
 # jekyll-theme-merlot      <-- scrolls as decorations
 # jekyll-theme-cayman      <-- green/blue top banner 
 # jekyll-theme-midnight    <-- dark
-#
+# jekyll-theme-leap-day  <-- Python like
 # others:                  <-- https://github.com/pages-themes
