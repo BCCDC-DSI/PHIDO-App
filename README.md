@@ -6,8 +6,7 @@
 
 ## Purpose
 
-- This page provides links to key documents and step-by-step instructions for different tasks involving the PHIDO-app-2.0 dashboard.
-- Extended from [CD Weekly Alerts Procedure](https://your.healthbc.org/sites/BCCDCsurv/analysts/_layouts/15/start.aspx#/SitePages/CD%20Weekly%20Alerts%20Procedure.aspx)
+- This page provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-app-2.0](https://bccdc.shinyapps.io/PHIDO/).
  
 | |  CD weekly alerts | PHIDO-app 2.0 |
 | :-- | :--  | :-- |
@@ -19,13 +18,14 @@
 | **​Links to Folders** | - \\phsabc\root\BCCDC\Groups\Data_Surveillance\PHRDW\CD\Alerts\csv_output <br>- \\phsabc.ehcnet.ca\root\BCCDC\Groups\Analytics\Data_Analysts\Reports_Scripts\Reporting\CD-Alerts-Extract <br>- https://bi.phsa.ca/BCCDC/Reports/CD/Case_Count_Reports  <br>- \\phsabc.ehcnet.ca\root\BCCDC\Groups\CDIS\Epidemiology\epid\CD\1. SURVEILLANCE - General\CD Alert and Rolling reports <br>- \\phsabc\root\BCCDC\Groups\Analytics\Data_Analysts\Reports_Scripts\Reporting\CD-Alerts\Outputs  |  <br> User manual of PHIDO 2.0 prepared by Max ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` <br> Validation compiled by Max et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_Validation``` <br> [Shiny Login](https://www.shinyapps.io/admin/#/dashboard), use login ```data_analytics```|
 | ​**Average Time** | 30 minutes​  | 10 minutes |
 
+Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org/sites/BCCDCsurv/analysts/_layouts/15/start.aspx#/SitePages/CD%20Weekly%20Alerts%20Procedure.aspx).
 
 <hr>
 
 ### How-to
 
 <details>
-<summary> A. Launching dashboard on your station
+<summary> A. Launching dashboard on your station locally
 </summary>
 
 1. Login to your station 
@@ -54,8 +54,8 @@ B. Publishing changes to Shiny
 </summary>
 
 1. Repeat steps in Section A to test that the dashboard executes fine locally
-2. Run ```deployment/PHIDO_dev002_deploy.R``` (or ```deployment/PHIDO_dashboard_live.R``` to publish Lizz's vesion)  
-3. Take a coffee break; the PHIDO dashboard code and intermediate outputs involve "large" data transfers and will take >5 minutes.
+2. Upon project owner's approval, run ```deployment/PHIDO_dev001_deploy.R``` to publish your changes to the online app
+3. Take a coffee break as the project folder (code and intermediate outputs) would require "large" data transfers and will take >5 minutes.
 
 See [example log showing successful R Studio outputs](example_log.md)
  
@@ -63,8 +63,16 @@ See [example log showing successful R Studio outputs](example_log.md)
 </details>
 
 <details>
+<summary> Adding users </summary>
+
+- Login under data_analytics@bccdc.ca
+- Password: [data analysts been given this info]
+
+</details>
+
+<details>
 <summary>
-C. Extending your own copy 
+Appendix 1. Extending your own copy 
 </summary>
 
 1. [Install Anaconda](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/SitePages/virtual-environments.aspx)  
