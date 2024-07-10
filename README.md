@@ -1,14 +1,14 @@
 # PHIDO-app
 
-
-# PHIDO dashboard - operating procedure 
-
-
 ## Purpose
 
 This page provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-app-2.0](https://bccdc.shinyapps.io/PHIDO/).
 <br><br>
 
+
+## PHIDO dashboard - operating procedure 
+
+### Summary
 
 | |  CD weekly alerts | PHIDO-app 2.0 |
 | :-- | :--  | :-- |
@@ -24,7 +24,7 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 <br><br>
 <hr>
 
-### How-to
+### How-to instructions
 
 - Companion guide: how-to instructions with screenshots](https://tinyurl.com/phido-dashboard]
 
