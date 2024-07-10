@@ -6,8 +6,10 @@
 
 ## Purpose
 
-- This page provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-app-2.0](https://bccdc.shinyapps.io/PHIDO/).
- <br><br>
+This page provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-app-2.0](https://bccdc.shinyapps.io/PHIDO/).
+<br><br>
+
+
 | |  CD weekly alerts | PHIDO-app 2.0 |
 | :-- | :--  | :-- |
 | **Description** |​ To detect an unusual rise in weekly disease counts based on their temporal and cyclical trends.​ | To enable interactive explorations of alerts (sort, etc.) |
