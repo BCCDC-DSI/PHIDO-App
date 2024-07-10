@@ -9,7 +9,7 @@ include:
 title: Python/Git Workshop
 markdown: GFM
 show_downloads: true
-theme:  jekyll-theme-moon
+theme:  jekyll-theme-cayman
 
 # jekyll-theme-minimal     <-- blue
 # jekyll-theme-hacker      <-- black background with typewriter font
