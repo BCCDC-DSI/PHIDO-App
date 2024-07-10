@@ -26,7 +26,7 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 
 ### How-to instructions
 
-- Companion guide: how-to instructions with screenshots](https://tinyurl.com/phido-dashboard]
+- Companion guide: [how-to instructions with screenshots](https://tinyurl.com/phido-dashboard]
 
 <details>
 <summary> A. Launching dashboard on your station locally</summary>
