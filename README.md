@@ -11,10 +11,10 @@
 | |  CD weekly alerts | PHIDO-app 2.0 |
 | :-- | :--  | :-- |
 | **Description** |​ To detect an unusual rise in weekly disease counts based on their temporal and cyclical trends.​ | To enable interactive explorations of alerts (sort, etc.) |
-| **​Frequency** | Weekly every Tuesday by 1:00 pm​   | NA/ |
+| **​Frequency** | Weekly every Tuesday by 1:00 pm​   | N/A |
 | **​Prerequisites** | 1. PHIDO 2.0 (R) <br> 2. Access to PHRDW CD Data Mart | Same |
-| ​**Report To** | Users from  <br>- _BCCDC_CDAlerts <br>- _BCCDC_IPVPDS_Imms <br>- _BCCDC_PHR_ALL_STAFF <br>- _BCCDC_CEHO |
-| **Rolling Reports** | bcc to _BCCDC_RollingReports | Same |
+| ​**Report To** |   <br>- _BCCDC_CDAlerts <br>- _BCCDC_IPVPDS_Imms <br>- _BCCDC_PHR_ALL_STAFF <br>- _BCCDC_CEHO | Users from the same mailing lists |
+| **Rolling Reports To** | Bcc'd to _BCCDC_RollingReports | N/A |
 | **​Links to Folders** | - \\phsabc\root\BCCDC\Groups\Data_Surveillance\PHRDW\CD\Alerts\csv_output <br>- \\phsabc.ehcnet.ca\root\BCCDC\Groups\Analytics\Data_Analysts\Reports_Scripts\Reporting\CD-Alerts-Extract <br>- https://bi.phsa.ca/BCCDC/Reports/CD/Case_Count_Reports  <br>- \\phsabc.ehcnet.ca\root\BCCDC\Groups\CDIS\Epidemiology\epid\CD\1. SURVEILLANCE - General\CD Alert and Rolling reports <br>- \\phsabc\root\BCCDC\Groups\Analytics\Data_Analysts\Reports_Scripts\Reporting\CD-Alerts\Outputs  |  <br> User manual of PHIDO 2.0 prepared by Max ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` <br> Validation compiled by Max et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_Validation``` <br> [Shiny Login](https://www.shinyapps.io/admin/#/dashboard), use login ```data_analytics```|
 | ​**Average Time** | 30 minutes​  | 10 minutes |
 
@@ -25,8 +25,7 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 ### How-to
 
 <details>
-<summary> A. Launching dashboard on your station locally
-</summary>
+<summary> A. Launching dashboard on your station locally</summary>
 
 1. Login to your station 
 2. Launch [R Studio 4.1.1 via CAP](launch_r4.1.1_cap.md)
