@@ -149,6 +149,12 @@ Appendix 1. Extending your own copy
 
 </details>
 
+<details>
+
+<summary>[Appendix: understanding the code base for modifications](refine.md)</summary>
+
+</details>
+
  
 
 
