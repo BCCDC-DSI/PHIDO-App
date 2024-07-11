@@ -9,4 +9,16 @@ include:
 title: PHIDO-app
 markdown: GFM
 show_downloads: false
-theme:  jekyll-theme-leap-day
+theme: jekyll-theme-slate
+
+
+# jekyll-theme-minimal     <-- blue
+# jekyll-theme-hacker      <-- black background with typewriter font
+# jekyll-theme-architect   <-- handwriting-like font
+# jekyll-theme-merlot      <-- scrolls as decorations
+# jekyll-theme-cayman      <-- green/blue top banner 
+# jekyll-theme-midnight    <-- dark
+# jekyll-theme-leap-day
+#
+# others:                  <-- https://github.com/pages-themes
+
