@@ -11,7 +11,7 @@
     </head>
     <body>
               ...
-             <div class="bottom-text">PHIDO Dashboard</div>
+             <div class="bottom-text">PHIDO app 2.2</div>
           </div>
        </div>
     </body>
