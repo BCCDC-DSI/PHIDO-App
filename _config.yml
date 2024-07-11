@@ -75,7 +75,7 @@ lunr:
   search_within_pages    : # true, false (default)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
-  index_name             : readme.md # YOUR_INDEX_NAME
+  index_name             : README.md # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
