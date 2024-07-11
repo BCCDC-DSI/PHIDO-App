@@ -16,7 +16,10 @@ This page provides links to key documents and step-by-step instructions for diff
 | **​Frequency** | Review the app weekly every Tuesday by 12:00 pm​  |
 | **​Prerequisites** | 1. PHIDO 2.0 (R) <br> 2. Access to PHRDW CD Data Mart |
 | ​**Report To** | Users from following mailing lists: <br>- _BCCDC_CDAlerts <br>- _BCCDC_IPVPDS_Imms <br>- _BCCDC_PHR_ALL_STAFF <br>- _BCCDC_CEHO |
-| **​Links to Folders** | <br>To locally launch PHIDO-app in RStudio with **mock data**, open the RStudio project file under ``\\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version```<br> User manual of PHIDO 2.0 prepared by Max Xie ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` <br> Validation data compiled by Max et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_Validation``` <br> [Shiny Login](https://www.shinyapps.io/admin/#/dashboard) (login email ```data_analytics@bccdc.ca```|
+| **​Links to Folders** | To locally launch PHIDO-app in RStudio with **mock data**, open the RStudio project file under ``\\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version``` | 
+| | User manual of PHIDO 2.0 prepared by Max Xie ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` |
+| | Validation data compiled by Max et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_Validation``` |
+| | [Shiny Login](https://www.shinyapps.io/admin/#/dashboard) (login email ```data_analytics@bccdc.ca```)|
 | ​**Average Time** | 30 minutes​  |
 
 Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org/sites/BCCDCsurv/analysts/_layouts/15/start.aspx#/SitePages/CD%20Weekly%20Alerts%20Procedure.aspx).
