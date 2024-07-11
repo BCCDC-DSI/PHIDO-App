@@ -79,8 +79,12 @@ See [example log showing successful R Studio outputs](example_log.md)
 
 <details>
 <summary>
-Appendix 1. Extending your own copy 
+Appendices to use when extending your own copy 
 </summary>
+
+## [Appendix 1: Understanding the code base for modifications](refine.md)
+
+## Appendix 2: Version control via GitLab 
 
 1. [Install Anaconda](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/SitePages/virtual-environments.aspx)  
     - May wish to review [notes on path](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/SitePages/Python-Infrastructure.aspx)
@@ -148,13 +152,6 @@ Appendix 1. Extending your own copy
     </details>
 
 </details>
-
-<details>
-
-<summary>[Appendix: understanding the code base for modifications](refine.md)</summary>
-
-</details>
-
  
 
 
