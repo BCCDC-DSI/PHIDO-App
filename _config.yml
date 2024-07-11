@@ -6,7 +6,7 @@ relative_links:
 include:
   - README.md
   - LICENSE.md
-title: Python/Git Workshop
+title: PHIDO-app
 markdown: GFM
-show_downloads: true
+show_downloads: false
 theme:  jekyll-theme-leap-day
