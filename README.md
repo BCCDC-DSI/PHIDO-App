@@ -38,7 +38,7 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 3. Choose "Open Project"
 4. Copy-paste below:
     ```
-    \\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\beta_version\
+    \\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version\
     ```
 5. Select ```dashboard.Rproj```
 6. Execute below and enter `y` when prompted about installations
