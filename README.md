@@ -17,8 +17,8 @@ This page provides links to key documents and step-by-step instructions for diff
 | **​Prerequisites** | 1. PHIDO 2.0 (R) <br> 2. Access to PHRDW CD Data Mart |
 | ​**Audience** | Users from following mailing lists: <br>- _BCCDC_CDAlerts <br>- _BCCDC_IPVPDS_Imms <br>- _BCCDC_PHR_ALL_STAFF <br>- _BCCDC_CEHO |
 | **​Links to Folders** | To locally launch PHIDO-app in RStudio with **mock data**, open the RStudio project file under ```\\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version``` | 
-| | User manual of PHIDO 2.0 prepared by Max Xie ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` |
-| | Validation data compiled by Max et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_Validation``` |
+| | User manual of PHIDO 2.0 prepared by Max Xie et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` |
+| | Validation data compiled by Max Xie et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_Validation``` |
 | | Login to [shiny.io](https://www.shinyapps.io/admin/#/dashboard) (use email ```data_analytics@bccdc.ca```; password should have been given to all DAs)|
 | ​**Average Time** | 30 minutes​  |
 
@@ -55,7 +55,18 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 <details>
 
 <summary> 
-B. Publishing changes to Shiny 
+B. Run scripts to prepare PHIDO outputs to be read by the PHIDO-app
+</summary>
+
+
+</details>
+
+
+
+<details>
+
+<summary> 
+C. Publishing changes to Shiny 
 </summary>
 
 1. Repeat steps in Section A to test that the dashboard executes fine locally
