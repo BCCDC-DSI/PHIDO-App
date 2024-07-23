@@ -223,10 +223,6 @@ Appendices to use when extending your own copy
 
 
 
-
-### Misc
-
-
 <details>
 
 <summary>Q/A</summary>
@@ -249,11 +245,11 @@ Appendices to use when extending your own copy
     - Run script 4 every Sunday at 11:30pm
 
 ### Phase II. 
-- Phase out PHIDO 1.0 after 3 months of automatiom 
+- Phase out PHIDO 1.0 after 3 months of automation 
 
 </details>
 
-
+<br><br>
 
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
