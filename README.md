@@ -55,11 +55,58 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 <details>
 
 <summary> 
-B. Run scripts to prepare PHIDO outputs to be read by the PHIDO-app
+B. Run script to prepare PHIDO outputs to be read by the PHIDO-app
 </summary>
+
+# Overview
+
+There are parts to this step.
+- Part 1 involves creating an updated version of ```data/input_1_case_n_attributes.csv``` in the app project folder.
+    - In short, this file consists of latest data extracted from CD Mart (precisely, the latest case counts and other attributes such as date of the case, region of the case, etc.).    
+- Part 2 involves running PHIDO 2.0 on these latest case counts to generate ```data/phido_output.RData``` file, which contains several list data types.
+- Part 3 involves creating another dataframe that will be used when populating the map widget. 
+
+## Part 1
+1. Launch R Studio via Central Analytics Platform
+2. Ensure that you're using R4.1.1
+3. In R Studio, choose ```File``` > ```Open project```, copy-paste: 
+    ```
+    \\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p11_PHIDO_deploy\
+    ```
+4. Copy-paste below in the console
+    ```source( 'main.R') ```   
+
+    - Upon completion of ```main.R```, the script will generate a new file under the app's folder, i.e.:
+        ```\\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\data\input_1_case_n_attributes.csv```
+
+
+## Part 2
+
+1. In R Studio, choose ```File``` > ```Open project```, copy-paste: 
+    ```
+    \\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\
+    ```
+
+2. Copy-paste below in the console:
+   ```source( 'data_prepare/row_data_with_age_sex.R') ``` 
+
+   - This script will update:
+       ```data/input_2_mock_age_sex_added.csv```
+   
+3. Copy-paste below in the console
+    ```source( 'data_prepare/create_dataset3_list.R') ```
+     
+    - This script will update:
+       ```data/phido_output.csv```
+   
+5. Go home :)
+    - It took 90 minutes to update ```data/phido_output.csv```, as tested on 2024-07-22.
+    - In later phase, we will automate this step completely
+ 
 
 
 </details>
+
 
 
 
