@@ -63,7 +63,7 @@ B. Run script to prepare PHIDO outputs to be read by the PHIDO-app
 There are parts to this step.
 - Part 1 involves creating an updated version of ```data/input_1_case_n_attributes.csv``` in the app project folder.
     - In short, this file consists of latest data extracted from CD Mart (precisely, the latest case counts and other attributes such as date of the case, region of the case, etc.).    
-- Part 2 involves running PHIDO 2.0 on these latest case counts to generate ```data/phido_output.RData``` file, which contains several list data types.
+- Part 2 involves running ***PHIDO 2.0 R package*** on these latest case counts to generate ```data/phido_output.RData``` file, which contains several list data types.
 - Part 3 involves creating another dataframe that will be used when populating the map widget. 
 
 ## Part 1
@@ -91,16 +91,16 @@ There are parts to this step.
    ```source( 'data_prepare/row_data_with_age_sex.R') ``` 
 
    - This script will update:
-       ```data/input_2_mock_age_sex_added.csv```
+       ```data/input_2_age_sex_added.csv```
    
 3. Copy-paste below in the console
     ```source( 'data_prepare/create_dataset3_list.R') ```
      
     - This script will update:
-       ```data/phido_output.csv```
+       ```data/phido_output.RData```
    
 5. Go home :)
-    - It took 90 minutes to update ```data/phido_output.csv```, as tested on 2024-07-22.
+    - It took 90 minutes to update ```data/phido_output.RData```, as tested on 2024-07-22.
     - In later phase, we will automate this step completely
  
 
