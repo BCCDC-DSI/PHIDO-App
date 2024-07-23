@@ -132,7 +132,7 @@ See [example log showing successful R Studio outputs](example_log.md)
 2. Update the user list by visiting https://www.shinyapps.io/admin/#/application/12298682/users
  - Email login: data_analytics@bccdc.ca
  - Password: [data analysts been given this info]
-- Application visibiity: select ``private''
+- Application visibiity: select ***private***
  - Add email of individual users
 
 </details>
