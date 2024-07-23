@@ -1,4 +1,4 @@
-# PHIDO-app
+# PHIDO-App
 
 ## Purpose
 
@@ -6,18 +6,18 @@ This page provides links to key documents and step-by-step instructions for diff
 <br><br>
 
 
-## PHIDO dashboard - operating procedure 
+## PHIDO-App - operating procedure 
 
 ### Summary
 
-| | PHIDO-app 2.0 |
+| | PHIDO-App 2.1 |
 | :-- | :--  |
-| **Description** |​ To provide an interface for users to interactively query data  related to weekly disease counts and temporal and cyclical trends |
+| **Description** |​ To provide an interface for users to interactively query data related to weekly disease counts and temporal and cyclical trends |
 | **​Frequency** | Review the app weekly every Tuesday by 12:00 pm​  |
-| **​Prerequisites** | 1. PHIDO 2.0 (R) <br> 2. Access to PHRDW CD Data Mart |
+| **​Prerequisites** | 1. Basic understanding of PHIDO 2.0 (R) and ```renv``` <br> 2. Access to PHRDW CD Data Mart <br> 3. Login axcess to Central Analytics Platform (CAP), in order to run R Studio with R4.1.1 on CAP servers |
 | ​**Audience** | Users from following mailing lists: <br>- _BCCDC_CDAlerts <br>- _BCCDC_IPVPDS_Imms <br>- _BCCDC_PHR_ALL_STAFF <br>- _BCCDC_CEHO |
-| **​Links to Folders** | To locally launch PHIDO-app in RStudio with ~~mock~~ latest data extract from CD mart**, open the RStudio project file under ```\\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version``` | 
-| | User manual of PHIDO 2.0 prepared by Max Xie et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` |
+| **​Links to Folders** | To locally launch PHIDO-App in RStudio with ***R 4.1.1*** with ~~mock~~ latest data extract from CD mart, open the RStudio project file under ```\\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version``` | 
+| | User manual of PHIDO 2.0 in R, prepared by Max Xie et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` |
 | | Validation data compiled by Max Xie et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_Validation``` |
 | | Login to [shiny.io](https://www.shinyapps.io/admin/#/dashboard) (use email ```data_analytics@bccdc.ca```; password should have been given to all DAs)|
 | ​**Average Time** | 30 minutes​  |
@@ -31,7 +31,7 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 - Companion guide: [how-to instructions with screenshots](https://tinyurl.com/phido-dashboard)
 
 <details>
-<summary> A. Launching dashboard on your station locally</summary>
+<summary> A. Launching Shiny app on your station</summary>
 
 1. Login to your station 
 2. Launch [R Studio 4.1.1 via CAP](launch_r4.1.1_cap.md)
@@ -41,11 +41,12 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
     \\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version\
     ```
 5. Select ```dashboard.Rproj```
-6. Execute below and enter `y` when prompted about installations
+6. Execute below
 
-    ```        
-    shiny::runApp( 'app.R' )  
-    ```
+   ```        
+   shiny::runApp( 'app.R' )  
+   ```
+   Note: enter `y` when prompted about installations
 
 </details>
 
@@ -55,7 +56,7 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 <details>
 
 <summary> 
-B. Run script to prepare PHIDO outputs to be read by the PHIDO-app
+B. Run script to prepare PHIDO outputs to be read by the PHIDO-App
 </summary>
 
 # Overview
@@ -63,7 +64,7 @@ B. Run script to prepare PHIDO outputs to be read by the PHIDO-app
 There are parts to this step.
 - Part 1 involves creating an updated version of ```data/input_1_case_n_attributes.csv``` in the app project folder.
     - In short, this file consists of latest data extracted from CD Mart (precisely, the latest case counts and other attributes such as date of the case, region of the case, etc.).    
-- Part 2 involves running ***PHIDO 2.0 R package*** on these latest case counts to generate ```data/phido_output.RData``` file, which contains several list data types.
+- Part 2 involves running ***PHIDO 2.0 R package*** on these latest case counts to generate ```data/phido_output.RData```, which contains several list data types.
 - Part 3 involves creating another dataframe that will be used when populating the map widget. 
 
 ## Part 1
