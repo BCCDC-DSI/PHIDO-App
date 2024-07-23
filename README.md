@@ -239,11 +239,19 @@ Appendices to use when extending your own copy
 - PHIDO-app-2.1: uses real data from CD mart
 - PHIDO-app-3.0: CLHA geography will be provided
 
-## Ideas
-- Run both PHIDO 1.0 and PHIDO-app-2.1 in parallel for 2-3 months 
+
+## Roll out plan
+
+### Phase I.
+- Idea: Run both PHIDO 1.0 and PHIDO-app-2.1 in parallel for 2-3 months 
+- Towards automation:
+    - Run script 1+2+3 every Sunday 9:30pm (script took 90 minutes to finish - on 2024-07-22 / second paired-rev session MX-LT)
+    - Run script 4 every Sunday at 11:30pm
+
+### Phase II. 
+- Phase out PHIDO 1.0 after 3 months of automatiom 
 
 </details>
-
 
 
 
