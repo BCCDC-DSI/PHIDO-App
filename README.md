@@ -16,9 +16,9 @@ This page provides links to key documents and step-by-step instructions for diff
 | :-- | :--  |
 | **Description** |​ To provide an interface for users to interactively query data related to weekly disease counts and temporal and cyclical trends |
 | **​Frequency** | Review the app weekly every Tuesday by 12:00 pm​  |
-| **​Prerequisites** | 1. Basic understanding of PHIDO 2.0 (R) and ```renv``` <br> 2. Access to PHRDW CD Data Mart <br> 3. Login axcess to Central Analytics Platform (CAP), in order to run R Studio with R4.1.1 on CAP servers |
+| **​Prerequisites** | 1. Basic understanding of PHIDO 2.0 (R) and ```renv``` <br> 2. Access to PHRDW CD Data Mart <br> 3. Login access to Central Analytics Platform (CAP), in order to run R Studio with R4.1.1 on CAP servers |
 | ​**Audience** | Users from following mailing lists: <br>- _BCCDC_CDAlerts <br>- _BCCDC_IPVPDS_Imms <br>- _BCCDC_PHR_ALL_STAFF <br>- _BCCDC_CEHO |
-| **​Links to Folders** | To locally launch PHIDO-App in RStudio with ***R 4.1.1*** with ~~mock~~ latest data extract from CD mart, open the RStudio project file under ```\\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version``` | 
+| **​Links to Folders** | To locally launch PHIDO-App in RStudio with ***R 4.1.1*** with ~~mock~~ latest data extract from CD mart, open the RStudio project file via this link (please copy-paste exactly): ```\\srvnetapp02.phsabc.ehcnet.ca\bccdc\Depts\Analytics\DSI\RnD\p06_PHIDO_dashboard\working_version\``` <br> Click on ```dashboard.Rproj``` | 
 | | User manual of PHIDO 2.0 in R, prepared by Max Xie et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_package``` |
 | | Validation data compiled by Max Xie et al. ```O:\BCCDC\Groups\Analytics\DSI\RnD\p01_PHIDO_2.0\PHIDO_Validation``` |
 | | Login to [shiny.io](https://www.shinyapps.io/admin/#/dashboard) (use email ```data_analytics@bccdc.ca```; password should have been given to all DAs)|
