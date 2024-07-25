@@ -1,6 +1,6 @@
 # PHIDO-App
 
-2024-07-24
+Last updated 2024-07-24
 
 ## Purpose
 
