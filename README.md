@@ -4,7 +4,7 @@ Last updated 2024-07-24
 
 ## Purpose
 
-This page provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-app-2.0](https://bccdc.shinyapps.io/PHIDO/).
+This page provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-App-2.1](https://bccdc.shinyapps.io/PHIDO/).
 <br><br>
 
 
@@ -234,9 +234,9 @@ Appendices to use when extending your own copy
 ## Deployment scheme
 
 - PHIDO 1.0: current pipeline producing power point sent by email
-- PHIDO-app-2.0: beta prototype, i.e. mock data
-- PHIDO-app-2.1: uses real data from CD mart
-- PHIDO-app-3.0: CLHA geography will be provided
+- PHIDO-App-2.0: beta prototype that uses PHIDO 2 with mock data 
+- PHIDO-App-2.1: working version with real data from CD mart
+- PHIDO-App-3.0: CLHA geography will be provided
 
 
 ## Roll out plan
