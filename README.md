@@ -94,19 +94,15 @@ There are parts to this step.
    ```source( 'data_prepare/row_data_with_age_sex.R') ``` 
 
    - This script will update:
-       ```data/input_2_age_sex_added.csv```
+       ```data/input_1_cases_n_attributes.csv```
    
 3. Copy-paste below in the console
     ```source( 'data_prepare/create_dataset3_list.R') ```
      
-    - This script will update:
+    - This script will update within >20 minutes**:
        ```data/phido_output.RData```
-   
-5. Go home :)
-    - It took 90 minutes to update ```data/phido_output.RData```, as tested on 2024-07-22.
-    - In later phase, we will automate this step completely
- 
 
+**as tested on 2024-07-22. In a later stage, we will automate this step completely
 
 </details>
 
