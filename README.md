@@ -180,7 +180,7 @@ Appendices to use when extending your own copy
     <details>
     
     <summary> 
-    Add new ```how-to-nav_v2.png``` figure 
+    Add new *how-to-nav_v2.png* figure 
     </summary>
 
     1. Launch Git Bash and navigate to your repository, e.g.
