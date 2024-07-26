@@ -133,8 +133,8 @@ See [example log showing successful R Studio outputs](example_log.md)
   - Password: [data analysts been given this info]
   - Application visibiity: ensure it stays in ***private*** mode
 
-3. Add email of individual users
-  - Make sure one line per email
+3. Click on Users to add email of individual users
+  - Make sure one line per email address or the URL link sent will become shared
 
 4. In the message box, please copy-paste below:
     ```
@@ -148,7 +148,9 @@ See [example log showing successful R Studio outputs](example_log.md)
     ```
     Note that the length of the message is restricted to length of 250 (characters).
 
-5. If users have trouble signing in, please direct them to these [screenshots](user_notes.md) 
+5. If users have trouble signing in, please direct them to these [screenshots](user_notes.md). 
+
+![image](https://github.com/user-attachments/assets/ab13149d-cd24-46e9-af29-5120b4fb68e1)
 
 </details>
 
