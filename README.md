@@ -133,10 +133,26 @@ See [example log showing successful R Studio outputs](example_log.md)
 
 1. Update the email list to ensure that retired staff will no longer have access to the app  
 2. Update the user list by visiting https://www.shinyapps.io/admin/#/application/12298682/users
- - Email login: data_analytics@bccdc.ca
- - Password: [data analysts been given this info]
-- Application visibiity: select ***private***
- - Add email of individual users
+  - Email login: data_analytics@bccdc.ca
+  - Password: [data analysts been given this info]
+  - Application visibiity: ensure it stays in ***private*** mode
+
+3. Add email of individual users
+  - Make sure one line per email
+
+4. In the message box, please copy-paste below:
+    ```
+    You were added to a special mailing list for secured access to weekly CD alerts.
+    
+    To log in, create an account with your institutional email.
+    
+    To adhere to PHSA privacy policies, keep your credentials private.
+    
+    Thank you for your cooperation.
+    ```
+    Note that the length of the message is restricted to length of 250 (characters).
+
+5. If users have trouble signing in, please direct them to these [screenshots](user_notes.md) 
 
 </details>
 
