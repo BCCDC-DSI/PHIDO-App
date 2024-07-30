@@ -116,9 +116,10 @@ C. Publishing changes to Shiny
 </summary>
 
 1. Repeat steps in Section A to test that the dashboard executes fine locally
-2. Upon project owner's approval, run ```deployment/PHIDO_dev001_deploy.R``` to publish your changes to the online app
-3. Take a coffee break as the project folder (code and intermediate outputs) would require "large" data transfers and will take >5 minutes.
-
+2. Upon project owner's approval, run ```deployment/PHIDO_dev001_deploy.R``` to publish your changes to the online app, i.e. copy-paste below in the console:
+   ```source( 'deployment/PHIDO_dev001_deploy.R')```
+3. Review the [checklist](checklist.md) to ensure that the app runs fine.
+ 
 See [example log showing successful R Studio outputs](example_log.md)
  
 
