@@ -99,10 +99,10 @@ There are parts to this step.
 3. Copy-paste below in the console
     ```source( 'data_prepare/create_dataset3_list.R') ```
      
-    - This script will update within >20 minutes**:
+    - This script will complete within 10 minutes**:
        ```data/phido_output.RData```
 
-**as tested on 2024-07-22. In a later stage, we will automate this step completely
+**As tested on 2024-07-30. In a later stage, DAS will automate this step completely.
 
 </details>
 
