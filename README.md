@@ -1,6 +1,6 @@
 # PHIDO-App
 
-Last updated 2024-07-24
+Last updated 2024-08-09
 
 ## Purpose
 
@@ -70,7 +70,7 @@ There are parts to this step.
 - Part 3 involves creating another dataframe that will be used when populating the map widget. 
 
 ## Part 1
-1. Launch R Studio via Central Analytics Platform
+1. Launch R Studio via [Central Analytics Platform](https://apps.phsa.ca/logon/LogonPoint/tmindex.html)
 2. Ensure that you're using R4.1.1
 3. In R Studio, choose ```File``` > ```Open project```, copy-paste: 
     ```
