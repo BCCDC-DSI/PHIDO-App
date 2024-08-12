@@ -126,7 +126,7 @@ See [example log showing successful R Studio outputs](example_log.md)
 </details>
 
 <details>
-<summary> Adding users </summary>
+<summary> D. Adding users to the app </summary>
 
 1. Update the email list to ensure that retired staff will no longer have access to the app  
 2. Update the user list by visiting https://www.shinyapps.io/admin/#/application/12298682/users
@@ -161,6 +161,8 @@ Appendices to use when extending your own copy
 </summary>
 
 ## [Appendix 1: Understanding the code base for modifications](refine.md)
+
+- Please review code infrastructure [here](refined.md)
 
 ## Appendix 2: Version control via GitLab 
 
