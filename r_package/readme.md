@@ -45,8 +45,7 @@ Source: [User Guide](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsSer
 
 After plotting the outputs (```fitted_counts```), one would get a trendline like this:
 
-![image](https://github.com/user-attachments/assets/1bfb5394-82aa-4ba4-ab39-c5c6a3a0c156)
-
+![image](https://github.com/user-attachments/assets/146ba070-048d-442a-b5dd-f5c2cf5768f3)
 
 ## IDWS
 
