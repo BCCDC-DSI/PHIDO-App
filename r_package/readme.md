@@ -1,5 +1,8 @@
 
-# Input
+# Technical introduction
+
+
+## Example of input data
 
 ![image](https://github.com/user-attachments/assets/c63f0e71-71c4-4933-9142-0292eea34883)
 
@@ -9,6 +12,7 @@
 install.packages( c("gam", "robustbase") )
 install.packages( "//phsabc.ehcnet.ca/root/BCCDC/Groups/Analytics_Resources/Coding/R/Library/PHIDO_0.2.0.tar.gz", repos = NULL )
 
+# renv users:
 install.packages( pkgs = "//phsabc.ehcnet.ca/root/BCCDC/Groups/Analytics_Resources/Coding/R/Library/PHIDO_0.2.0.tar.gz",
   lib = "//phsabc.ehcnet.ca/root/BCCDC/Groups/<project_folder>/renv/library/<which_R_ver>/x86_64-w64-mingw32",
   INSTALL_opts = '--no-lock',
@@ -27,22 +31,33 @@ output <- mainPHIDO(x = input$x,
 HighP = 0.001,
  MidP = 0.01,
  LowP = 0.05)
+
+tail( select(output, x, y, AlertPeriodStart, AlertPeriodEnd, AlertScorePvalue) )
+
+
 ```
 Source: [User Guide](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/_layouts/15/download.aspx?SourceUrl=/sites/BCCDCDataAnalyticsServicePHSA/Epidemiological%20Methods/PHIDO%20user%20manual%20V2%20for%20sharepoint.pdf)
 
 
-# Output
+## Sample outputs & visualization
+
+After plotting the outputs (```fitted_counts```), one would get a trendline like this:
+
+![image](https://github.com/user-attachments/assets/1bfb5394-82aa-4ba4-ab39-c5c6a3a0c156)
 
 
-
-# Notes:
+## Misc notes
 
 Seasonal trends not feasible if any of below:
 - Less than 2 years of training data
 - Less than 10 non-zero counts per year
 - Less than 10 non-zero counts in the entire data
 
+PHIDO fits a set of generalized additive models on the count input data and outputs an estimate of the expected count "fitted counts". 
+To reduce the effects of outliers on the output estimates, PHIDO uses an iterative down-weighting scheme (IDWS).
+
+By default, PHIDO runs a maximum of 20 iterations in the IDWS, where non-zero counts are all given weights of 1.0 initially. Then,
+- If a jump happens, count $Y_t$ is more than 2x of count $Y_{t+}1$ n day 1 e.g. $Y_n > 2*Y_{n+t}$
+
 
 Non-parametric portions fitted using locally estimated scatter plot smoothing
-
-weighted generalized additive models
