@@ -17,7 +17,8 @@ In spring of 2023, [PHIDO-App](https://bccdc.shinyapps.io/PHIDO/) was implemente
 
 This repo provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-App-2.1](https://bccdc.shinyapps.io/PHIDO/).
 
-For data analysts, please refer to the [Standard Operating Procedure](sop.md)
+If you are viewing this page as a data analyst, please check out [Standard Operating Procedure](sop.md).
+
 <br><br>
 
 
