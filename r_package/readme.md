@@ -3,13 +3,6 @@
 
 PHIDO fits a set of generalized additive models on the input data on case counts and outputs an estimate of the expected count "fitted counts". To reduce the effects of outliers on the output estimates, PHIDO uses an iterative down-weighting scheme (IDWS).
 
-By default, PHIDO runs a maximum of 20 iterations in the IDWS, where counts of zeros are all given weights of 1.0 initially. 
-
-
-Next, the counts are sorted in ascending order^[1]^ and weights for each case count are adjusted one-by-one in this order. For instance, if a jump happens, e.g. $Y_k>2\*Y_{k-1}$ (or $Y_k > 2$ and $Y_{k-1}$, then the weight for count $o+1$ is computed as:
-      $w_{k} = 2*Y_{k-1} / Y_{k}$
-
-[1]: [0,0,22,0,0,0,0,1,0] is sorted to [0,0,0,0,0,0,0,1,22]
 
 ## Example of input data
 
@@ -55,13 +48,33 @@ After plotting the outputs (```fitted_counts```), one would get a trendline like
 ![image](https://github.com/user-attachments/assets/1bfb5394-82aa-4ba4-ab39-c5c6a3a0c156)
 
 
+## IDWS
+
+By default, PHIDO runs a maximum of 20 iterations in the IDWS, where counts of zeros are all given weights of 1.0 initially. 
+
+Next, the counts are sorted in ascending order^[1]^ and weights for each case count are adjusted one-by-one in this order.
+For instance, if a jump happens, e.g. $Y_k>2\*Y_{k-1}$ (or $Y_k > 2$ and $Y_{k-1}$, then the weight for count $o+1$ is computed as:
+      $w_{k} = 2*Y_{k-1} / Y_{k}$
+
+More details on the heuristics are presented in [Lee's thesis]{https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjcserk-f-IAxVICTQIHYlrES4QFnoECBUQAQ&url=https%3A%2F%2Fopen.library.ubc.ca%2Fmedia%2Fstream%2Fpdf%2F24%2F1.0380711%2F4&usg=AOvVaw1XUjdEcZI-gdNSnpSMRPx2&opi=89978449). 
+
+The pseudo algorithm looks like:
+```
+w <- calc_init_weights( input$y )
+m <- gam(model,family=quasi(log,mu), weights=w )
+
+```
+
+<br>
+[1]: [0,0,22,0,0,0,0,1,0] is sorted to [0,0,0,0,0,0,0,1,22]
+
 ## Misc notes
 
-Seasonal trends not feasible if any of below:
-- Less than 2 years of training data
-- Less than 10 non-zero counts per year
-- Less than 10 non-zero counts in the entire data
+- Seasonal trends not feasible if any of below:
+      - Less than 2 years of training data
+      - Less than 10 non-zero counts per year
+      - Less than 10 non-zero counts in the entire data
+
+- Non-parametric portions are fitted using locally estimated scatter plot smoothing
 
 
-
-Non-parametric portions fitted using locally estimated scatter plot smoothing
