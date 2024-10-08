@@ -1,7 +1,7 @@
 
 # Technical introduction
 
-PHIDO fits a set of generalized additive models on the input data on case counts and outputs an estimate of the expected count "fitted counts". To reduce the effects of outliers on the output estimates, PHIDO uses an iterative down-weighting scheme (IDWS).
+PHIDO fits a set of generalized additive models on the input data on case counts and outputs an estimate of the expected count "fitted counts". To reduce the effects of outliers on the output estimates, PHIDO uses an ***iterative down-weighting scheme***.
 
 
 ## Example of input data
@@ -40,8 +40,6 @@ HighP = 0.001,
  LowP = 0.05)
 
 tail( select(output, x, y, AlertPeriodStart, AlertPeriodEnd, AlertScorePvalue) )
-
-
 ```
 Source: [User Guide](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/_layouts/15/download.aspx?SourceUrl=/sites/BCCDCDataAnalyticsServicePHSA/Epidemiological%20Methods/PHIDO%20user%20manual%20V2%20for%20sharepoint.pdf)
 
@@ -52,20 +50,20 @@ After plotting the outputs (```fitted_counts```), one would get a trendline like
 
 ![image](https://github.com/user-attachments/assets/146ba070-048d-442a-b5dd-f5c2cf5768f3)
 
-## IDWS
+## Iterative down-weighting scheme (IDWS) 
 
 By default, PHIDO runs a maximum of 20 iterations in the IDWS, where counts of zeros are all given weights of 1.0 initially. 
 
 Next, the counts are sorted in ascending order^[1]^ and weights for each case count are adjusted one-by-one in this order.
 For instance, if a jump happens, e.g. $Y_k>2\*Y_{k-1}$ (or $Y_k > 2$ and $Y_{k-1}$, then the weight for count $o+1$ is computed as:
-      $w_{k} = 2*Y_{k-1} / Y_{k}$
-
-More details on the heuristics are presented in [Lee's thesis](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjcserk-f-IAxVICTQIHYlrES4QFnoECBUQAQ&url=https%3A%2F%2Fopen.library.ubc.ca%2Fmedia%2Fstream%2Fpdf%2F24%2F1.0380711%2F4&usg=AOvVaw1XUjdEcZI-gdNSnpSMRPx2&opi=89978449). 
+      $w_{k} = 2*Y_{k-1} / Y_{k}$. More details on the heuristics are presented in [Lee's thesis](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjcserk-f-IAxVICTQIHYlrES4QFnoECBUQAQ&url=https%3A%2F%2Fopen.library.ubc.ca%2Fmedia%2Fstream%2Fpdf%2F24%2F1.0380711%2F4&usg=AOvVaw1XUjdEcZI-gdNSnpSMRPx2&opi=89978449). 
 
 The pseudo-algorithm looks like:
 ```
 w <- calc_init_weights( input$y )
 m <- gam(model,family=quasi(log,mu), weights=w )
+cond_distr = calc_cond_distr( )
+est_dispersion( input$y )
 ```
 
 <br>
