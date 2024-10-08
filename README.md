@@ -28,6 +28,20 @@ Above table extended from [CD Weekly Alerts Procedure](https://your.healthbc.org
 <br><br>
 <hr>
 
+### References
+
+- [user manual v2](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/_layouts/15/download.aspx?SourceUrl=/sites/BCCDCDataAnalyticsServicePHSA/Epidemiological%20Methods/PHIDO%20user%20manual%20V2%20for%20sharepoint.pdf)
+- Other diseases:
+    - Weekly PDF reports [report latest data on SARS-CoV-2, RSV, ERV, influenza](http://www.bccdc.ca/Health-Info-Site/Documents/Respiratory_data/respiratory_surveillance_2024-10-03.pdf)
+    - [Shellfish harvesting status map](http://www.bccdc.ca/health-professionals/professional-resources/shellfish-harvesting-sites-status-map)
+
+### Glossary
+
+- Case counts: counts of case records pulled from the Panorama system
+    - Types: Confirmed, confirmed Epi-Linked, Clinical, Probable (exclude suspected cases)
+- ... 
+
+
 ### How-to instructions
 
 - Companion guide: [how-to instructions with screenshots](https://tinyurl.com/phido-dashboard)
