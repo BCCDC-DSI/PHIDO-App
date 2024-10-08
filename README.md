@@ -1,6 +1,9 @@
 # PHIDO-App
 
-Last updated 2024-08-09
+|Revision history|
+| :-- |
+|v1.0 2024-08-09|
+|v1.2 2024-10-07|
 
 ## Purpose
 
