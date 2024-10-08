@@ -1,9 +1,5 @@
 # PHIDO-App
 
-|Revision history|
-| :-- |
-|v1.0 2024-08-09|
-|v1.2 2024-10-07|
 
 ## Purpose
 
@@ -31,13 +27,18 @@ If you are viewing this page as a data analyst, please check out [Standard Opera
 - More data / reports on diseases not currently displayed on the PHIDO-App:
     - Weekly PDF reports [report latest data on SARS-CoV-2, RSV, ERV, influenza](http://www.bccdc.ca/Health-Info-Site/Documents/Respiratory_data/respiratory_surveillance_2024-10-03.pdf)
     - [Shellfish harvesting status map](http://www.bccdc.ca/health-professionals/professional-resources/shellfish-harvesting-sites-status-map)
-
+- [Cliff's technical notes](r_package)
 
 ## Glossary
 
 - Case counts: counts of case records pulled from the Panorama system
     - Types: Confirmed, confirmed Epi-Linked, Clinical, Probable (exclude suspected cases)
 - ... 
+
+
+## Revision history
+- v1.0, 2024-08-09
+- v1.2, 2024-10-07
 
 
 <br><br>
