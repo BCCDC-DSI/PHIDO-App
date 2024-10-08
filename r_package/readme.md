@@ -10,6 +10,10 @@ PHIDO fits a set of generalized additive models on the input data on case counts
 
 ## Sample code snippet
 
+Relating the figure on input data:
+- ```input$x``` is a vector of ***date*** in the above figure
+- ```input$y``` is a vector of ***count*** in the above figure
+
 ```
 install.packages( c("gam", "robustbase") )
 install.packages( "//phsabc.ehcnet.ca/root/BCCDC/Groups/Analytics_Resources/Coding/R/Library/PHIDO_0.2.0.tar.gz", repos = NULL )
