@@ -5,8 +5,9 @@ PHIDO fits a set of generalized additive models on the input data on case counts
 
 By default, PHIDO runs a maximum of 20 iterations in the IDWS, where counts of zeros are all given weights of 1.0 initially. 
 
-Next, the counts are sorted in ascending order, denoted by $o$, and weights for each case count are adjusted one-by-one in order. For instance, if a jump happens, e.g. $Y_o>2\*Y_{o+1}$, then the weight for count $o+1$ is computed as:
-      $w_{o+1} = 2*Y_o / Y_{o+1}$
+
+Next, the counts are sorted in ascending order, i.e. [0,0,1,22], and weights for each case count are adjusted one-by-one in this order. For instance, if a jump happens, e.g. $Y_k>2\*Y_{k-1}$ (or $Y_k > 2$ and $Y_{k-1}$, then the weight for count $o+1$ is computed as:
+      $w_{k} = 2*Y_{k-1} / Y_{k}$
 
 
 ## Example of input data
