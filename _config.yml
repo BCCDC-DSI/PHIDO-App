@@ -7,7 +7,7 @@ include:
   - README.md
   - LICENSE.md
 title: PHIDO-App
-markdown: GFM
+markdown: kramdown
 show_downloads: false
 theme: jekyll-theme-slate
 
