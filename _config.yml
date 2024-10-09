@@ -9,7 +9,7 @@ include:
 title: PHIDO-App
 markdown: GFM
 show_downloads: false
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 
 # jekyll-theme-minimal     <-- blue
 # jekyll-theme-hacker      <-- black background with typewriter font
