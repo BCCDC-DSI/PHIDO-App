@@ -3,7 +3,8 @@
 
 ## Purpose
 
-![image](https://github.com/user-attachments/assets/c63f0e71-71c4-4933-9142-0292eea34883)
+![image](https://github.com/user-attachments/assets/146ba070-048d-442a-b5dd-f5c2cf5768f3)
+
 
 
 PHIDO is a statistical algorithm that determines whether sequence of weekly case counts are unusual compared to any trend shown over the previous five years. 
