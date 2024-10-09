@@ -24,7 +24,7 @@ A copy of the [Standard Operating Procedure](sop.md) for use by data analysts.
 
 ## Diseases reflected by the app
 
-[List of common diseases](metadata/CD_by_prescribed_agents.txt)
+[List of common diseases](metadata/CD_by_prescribed_agents.md)
 
 <details>
   
