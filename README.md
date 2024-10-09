@@ -49,11 +49,12 @@ Below are links to the diseases not currently reported on the PHIDO-App:
 
 
 <br> 
+
 Revision history
 - v1.0, 2024-08-09
 - v1.2, 2024-10-07
 
-<br><br>
+<br> 
 
 [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc] This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc]. [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
 
