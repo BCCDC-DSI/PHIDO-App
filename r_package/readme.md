@@ -101,5 +101,5 @@ for (itn in 1:20){
     - Less than 10 non-zero counts in the entire data
 
  
-[Return to home](../..)
+[Return to Home](..)
 
