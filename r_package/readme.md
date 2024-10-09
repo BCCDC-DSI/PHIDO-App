@@ -65,7 +65,7 @@ $log( \lambda(t) ) = a + \beta t + f(t) + c(t)$
 
 By default, PHIDO runs a maximum of 20 iterations in the IDWS, where counts of zeros are all given weights of 1.0 initially. 
 
-Next, the counts are sorted in ascending order^[1]^ and weights for each case count are adjusted one-by-one in this order.
+Next, the counts are sorted in ascending order^ and weights for each case count are adjusted one-by-one in this order.
 For instance, if a jump happens, e.g. $Y_k>2\*Y_{k-1}$ (or $Y_k > 2$ and $Y_{k-1}$, then the weight for count $o+1$ is computed as:
       $w_{k} = 2*Y_{k-1} / Y_{k}$. More details on the heuristics are presented in [Lee's thesis](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjcserk-f-IAxVICTQIHYlrES4QFnoECBUQAQ&url=https%3A%2F%2Fopen.library.ubc.ca%2Fmedia%2Fstream%2Fpdf%2F24%2F1.0380711%2F4&usg=AOvVaw1XUjdEcZI-gdNSnpSMRPx2&opi=89978449). 
 
@@ -91,7 +91,7 @@ for (itn in 1:20){
 ```
 
 <br>
-[1]: [0,0,22,0,0,0,0,1,0] is sorted to [0,0,0,0,0,0,0,1,22]
+^Asscending order would sort [0,0,22,0,0,0,0,1,0] to [0,0,0,0,0,0,0,1,22]
 
 ## Recap
 
