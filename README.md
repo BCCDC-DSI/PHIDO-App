@@ -17,7 +17,6 @@ In spring of 2024, [PHIDO-App](https://bccdc.shinyapps.io/PHIDO/) was implemente
 
 This repo provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-App](https://bccdc.shinyapps.io/PHIDO/).
 
-A copy of the [Standard Operating Procedure](sop.md) for use by data analysts.
 
 <br>
 
@@ -82,6 +81,10 @@ Yellow Fever
 
 ## Important links
 
+### Maintaining the app
+
+- [Standard Operating Procedure](sop.md) for use by data analysts
+
 ### More data?
 
 Below are links to the diseases not currently reported on the PHIDO-App:
@@ -103,7 +106,7 @@ Below are links to the diseases not currently reported on the PHIDO-App:
 
 - Case counts: counts of case records pulled from the Panorama system
     - Types: Confirmed, confirmed Epi-Linked, Clinical, Probable (exclude suspected cases)
-- TBC
+- Expected count: the count estimated by PHIDO algorithm using time-series of historical counts
 
 
 <br> 
