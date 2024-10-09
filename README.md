@@ -96,7 +96,7 @@ Below are links to the diseases not currently reported on the PHIDO-App:
 
 - [PHIDO user manual v2](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/_layouts/15/download.aspx?SourceUrl=/sites/BCCDCDataAnalyticsServicePHSA/Epidemiological%20Methods/PHIDO%20user%20manual%20V2%20for%20sharepoint.pdf)
 
-- [Details from a sample CD-Alert email](admin/email)
+- [Details from a sample CD-Alert email](admin/email.md)
 
 - [Cliff's technical notes](r_package)
 
