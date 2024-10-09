@@ -24,11 +24,19 @@ If you are viewing this page as a data analyst, please check out [Standard Opera
 
 ## Important links
 
+### More data?
+
+Below are links to the diseases not currently reported on the PHIDO-App:
+
+- Weekly PDF reports [report latest data on SARS-CoV-2, RSV, ERV, influenza](http://www.bccdc.ca/Health-Info-Site/Documents/Respiratory_data/respiratory_surveillance_2024-10-03.pdf)
+- [Shellfish harvesting status map](http://www.bccdc.ca/health-professionals/professional-resources/shellfish-harvesting-sites-status-map)
+- ...
+  
+### Details on algorithm
+
 - [PHIDO user manual v2](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/_layouts/15/download.aspx?SourceUrl=/sites/BCCDCDataAnalyticsServicePHSA/Epidemiological%20Methods/PHIDO%20user%20manual%20V2%20for%20sharepoint.pdf)
-- More data / reports on diseases not currently displayed on the PHIDO-App:
-    - Weekly PDF reports [report latest data on SARS-CoV-2, RSV, ERV, influenza](http://www.bccdc.ca/Health-Info-Site/Documents/Respiratory_data/respiratory_surveillance_2024-10-03.pdf)
-    - [Shellfish harvesting status map](http://www.bccdc.ca/health-professionals/professional-resources/shellfish-harvesting-sites-status-map)
 - [Cliff's technical notes](r_package)
+
 
 ## Glossary
 
