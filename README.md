@@ -38,26 +38,21 @@ Below are links to the diseases not currently reported on the PHIDO-App:
 - [Cliff's technical notes](r_package)
 
 
-## Glossary
+## Terms
 
 - Case counts: counts of case records pulled from the Panorama system
     - Types: Confirmed, confirmed Epi-Linked, Clinical, Probable (exclude suspected cases)
-- ... 
+- TBC
 
 
-## Revision history
+<br><br> 
+Revision history
 - v1.0, 2024-08-09
 - v1.2, 2024-10-07
 
-
 <br><br>
 
-[![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
-
-This work is licensed under a
-[Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
-
-[![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
+[![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc] This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc]. [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
 
 [cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
 [cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
