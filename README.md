@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/8c50d1c4-a77a-4491-a5fa-e95e3641be2c)
 
 
 ![image](https://github.com/user-attachments/assets/146ba070-048d-442a-b5dd-f5c2cf5768f3)
@@ -96,6 +95,9 @@ Below are links to the diseases not currently reported on the PHIDO-App:
 ### Details on the algorithm
 
 - [PHIDO user manual v2](https://healthbc.sharepoint.com/sites/BCCDCDataAnalyticsServicePHSA/_layouts/15/download.aspx?SourceUrl=/sites/BCCDCDataAnalyticsServicePHSA/Epidemiological%20Methods/PHIDO%20user%20manual%20V2%20for%20sharepoint.pdf)
+
+- [Details from a sample CD-Alert email](admin/email)
+
 - [Cliff's technical notes](r_package)
 
 
