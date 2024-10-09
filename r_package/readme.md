@@ -50,6 +50,17 @@ After plotting the outputs (```fitted_counts```), one would get a trendline like
 
 ![image](https://github.com/user-attachments/assets/146ba070-048d-442a-b5dd-f5c2cf5768f3)
 
+## Mathematics behind PHIDO 
+
+PHIDO expresses the mean function $\lambda(t)$ as:
+$log( \lambda(t) ) = a + \beta t + f(t) + c(t)$
+
+- Where the last 2 terms are ***non-parameteric*** and are fitted using ***locally estimated scatter plot smoothing***
+- $f(t)$ cpatures long-term trend; it is excluded if there are less than 10 non-zero counts
+- $c(t)$ captures seasonal trend
+- The span for $c(t)$ is always 1, all data points
+- The span for $f(t)$ is the smallest section with at least 10 non-zero counts and span more than 2 years of data
+
 ## Iterative down-weighting scheme (IDWS) 
 
 By default, PHIDO runs a maximum of 20 iterations in the IDWS, where counts of zeros are all given weights of 1.0 initially. 
@@ -59,23 +70,36 @@ For instance, if a jump happens, e.g. $Y_k>2\*Y_{k-1}$ (or $Y_k > 2$ and $Y_{k-1
       $w_{k} = 2*Y_{k-1} / Y_{k}$. More details on the heuristics are presented in [Lee's thesis](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjcserk-f-IAxVICTQIHYlrES4QFnoECBUQAQ&url=https%3A%2F%2Fopen.library.ubc.ca%2Fmedia%2Fstream%2Fpdf%2F24%2F1.0380711%2F4&usg=AOvVaw1XUjdEcZI-gdNSnpSMRPx2&opi=89978449). 
 
 The pseudo-algorithm looks like:
+
 ```
 w <- calc_init_weights( input$y )
-m <- gam(model,family=quasi(log,mu), weights=w )
-cond_distr = calc_cond_distr( )
-est_dispersion( input$y )
+
+for (itn in 1:20){
+  m <- gam(model,family=quasi(log,mu), weights=w )
+  sigma_sqr  <- dispersion_fn( ... )
+  residuals <- calc_residuals( sigma_sqr, model )
+
+  residuals <- residuals / sqrt( sigma + 1e-20 )
+  cond_distr <- calc_cond_distr( input$y, sigma_sqr )
+
+  P1 <- 1 - probBinomialThruBeta_fn( ... )
+  P2 <- pnorm( residuals ) - 1
+  P3 <- pmax( 0.9, P1*P2 )
+  w <- w*(1-P3)*10
+}
+
 ```
 
 <br>
 [1]: [0,0,22,0,0,0,0,1,0] is sorted to [0,0,0,0,0,0,0,1,22]
 
-## Misc notes
+## Recap
 
-- Seasonal trends not feasible if any of below:
-      - Less than 2 years of training data
-      - Less than 10 non-zero counts per year
-      - Less than 10 non-zero counts in the entire data
+- Trends from non-parametric estimations will be disabled under any of the following conditions:
+    - Less than 2 years of training data
+    - Less than 10 non-zero counts per year
+    - Less than 10 non-zero counts in the entire data
 
-- Non-parametric portions are fitted using locally estimated scatter plot smoothing
+ 
 
 
