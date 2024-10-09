@@ -1,10 +1,7 @@
 # PHIDO-App
 
 
-## Purpose
-
 ![image](https://github.com/user-attachments/assets/146ba070-048d-442a-b5dd-f5c2cf5768f3)
-
 
 
 PHIDO is a statistical algorithm that determines whether sequence of weekly case counts are unusual compared to any trend shown over the previous five years. 
@@ -15,11 +12,14 @@ In spring of 2024, [PHIDO-App](https://bccdc.shinyapps.io/PHIDO/) was implemente
 - To aggregate analysis data based on gender
 - ...  
 
+
+## Purpose of this repo
+
 This repo provides links to key documents and step-by-step instructions for different tasks required for maintaining the [PHIDO-App-2.1](https://bccdc.shinyapps.io/PHIDO/).
 
 If you are viewing this page as a data analyst, please check out [Standard Operating Procedure](sop.md).
 
-<br><br>
+<br>
 
 
 ## Important links
@@ -38,6 +38,7 @@ Below are links to the diseases not currently reported on the PHIDO-App:
 - [Cliff's technical notes](r_package)
 
 
+<br>
 ## Terms
 
 - Case counts: counts of case records pulled from the Panorama system
@@ -45,7 +46,7 @@ Below are links to the diseases not currently reported on the PHIDO-App:
 - TBC
 
 
-<br><br> 
+<br> 
 Revision history
 - v1.0, 2024-08-09
 - v1.2, 2024-10-07
