@@ -1,5 +1,3 @@
-# PHIDO-App
-
 
 ![image](https://github.com/user-attachments/assets/146ba070-048d-442a-b5dd-f5c2cf5768f3)
 
